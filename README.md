@@ -7,7 +7,9 @@ A simple, open-source, autocorrection system using "discord.py" to make your sen
 ### What packages does it use?
 
 -discord.py
+
 -autocorrect
+
 -gingerit
 
 ### Where can I contact you?
