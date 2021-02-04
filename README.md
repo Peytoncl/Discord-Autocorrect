@@ -17,3 +17,7 @@ Because I just started it.
 ### Where can I contact you?
 
 "Peyton#5395" on Discord.
+
+### Where do I download at?
+
+https://github.com/Peytoncl/Discord-Autocorrect/releases/latest
