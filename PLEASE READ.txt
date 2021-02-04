@@ -1,3 +1,4 @@
 PLEASE RUN THESE IN YOUR COMMAND PROMPT TO DOWNLOAD THE REQUIRED PROGRAMS:
 "pip install autocorrect"
 "pip install discord.py"
+"pip install gingerit"

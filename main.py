@@ -1,7 +1,9 @@
 from autocorrect import Speller
 from discord.ext import commands
+from gingerit.gingerit import GingerIt
 
 spell = Speller(fast=True)
+caps = GingerIt()
 
 bot = commands.Bot(command_prefix="", self_bot=True)
 token = input("Your Discord token: ")
@@ -16,7 +18,9 @@ async def on_message(message):
         array = message.content.split()
         for x in array:
             array[array.index(x)] = spell(x)
-        newMsg = " ".join(array)
+        array[len(array) - 1] = array[len(array) - 1] + "."
+        autocorrectMsg = " ".join(array)
+        newMsg = caps.parse(autocorrectMsg)["result"]
         await message.edit(content=newMsg)
 
 bot.run(token, bot=False)
