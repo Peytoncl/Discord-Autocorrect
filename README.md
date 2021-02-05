@@ -22,7 +22,7 @@ https://github.com/Peytoncl/Discord-Autocorrect/releases/latest
 
 ## Installation Guide
 
-First, download Python 3.9.1 (https://www.python.org/ftp/python/3.9.1/python-3.9.1-amd64.exe)
+First, download Python 3.9.1 (https://www.microsoft.com/store/productId/9P7QFQMJRFP7)
 
 Next, run the commands (in command prompt) in the "PLEASE READ.txt" file.
 
