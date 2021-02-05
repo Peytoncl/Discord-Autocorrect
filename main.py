@@ -18,9 +18,12 @@ async def on_message(message):
         array = message.content.split()
         for x in array:
             array[array.index(x)] = spell(x)
-        array[len(array) - 1] = array[len(array) - 1] + "."
+        if "?" not in array[len(array) - 1] and "!" not in array[len(array) - 1] and "." not in array[len(array) - 1]:
+            array[len(array) - 1] = array[len(array) - 1] + "."
         autocorrectMsg = " ".join(array)
         newMsg = caps.parse(autocorrectMsg)["result"]
+        print("---------")
+        print("Old: " + message.content + "\nNew: " + newMsg)
         await message.edit(content=newMsg)
 
 bot.run(token, bot=False)
